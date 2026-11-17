@@ -370,6 +370,23 @@ def covers():
         {"art": "".join(art), "text": "fault", "glow": "#E8A0A8"},
     )
 
+    # Stashboard — personal vault tiles
+    tiles=[("passwords","••••••"),("files","report.pdf"),("notes","- todo"),("images","▣ ▣ ▣")]
+    art=[]
+    for k,(lab,val) in enumerate(tiles):
+        x=232+(k%2)*104; y=58+(k//2)*70
+        art.append(f'<rect x="{x}" y="{y}" width="96" height="60" rx="10" fill="{PANEL}" stroke="{LINE}"><animate attributeName="stroke" values="{LINE};{POWDER};{LINE};{LINE}" keyTimes="0;{.1+k*.2:.2f};{.25+k*.2:.2f};1" dur="5s" repeatCount="indefinite"/></rect>')
+        art.append(f'<text x="{x+10}" y="{y+22}" font-family="MO" font-size="10" fill="{DIM}">{lab}</text>')
+        art.append(f'<text x="{x+10}" y="{y+44}" font-family="MO" font-size="12" fill="{POWDER2}">{val}</text>')
+    # lock
+    art.append(f'<g transform="translate(444 152)"><rect x="0" y="12" width="26" height="20" rx="4" fill="{POWDER}"/><path d="M5 12V7a8 8 0 0 1 16 0v5" fill="none" stroke="{POWDER}" stroke-width="3"/><circle cx="13" cy="22" r="2.6" fill="{BG}"/></g>')
+    cover(
+        "stashboard",
+        "Stashboard",
+        "PERSONAL VAULT · JAVASCRIPT",
+        {"art": "".join(art), "text": "".join(a+b for a,b in tiles), "glow": LILAC},
+    )
+
     # Plant recognition — leaf with scanning line
     leaf = "M300 190 C 300 120, 360 70, 440 66 C 436 150, 380 196, 300 190 Z"
     art = f"""<g transform="translate(14 -26)">

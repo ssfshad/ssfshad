@@ -76,24 +76,19 @@ I'm **Shad**, an ICE undergrad at Daffodil International University and the foun
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center" valign="top">
-<a href="https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s"><img src="assets/p-wsn.svg" width="50%"/></a>
+<td width="50%" valign="top">
+<a href="https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s"><img src="assets/p-wsn.svg" width="100%"/></a>
 <br/><b><a href="https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s">AI-Powered Fault Detection in WSNs</a></b>: machine learning that spots faulty nodes in wireless sensor networks before they corrupt the data.
 <br/><sub><code>Python</code> <code>Machine learning</code> <code>IoT</code></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/ssfshad/Stashboard"><img src="assets/p-stashboard.svg" width="100%"/></a>
+<br/><b><a href="https://github.com/ssfshad/Stashboard">Stashboard</a></b>: one personal vault for passwords, files, notes and image collections.
+<br/><sub><code>JavaScript</code></sub>
 </td>
 </tr>
 </table>
 
-<details>
-<summary><b>More from the lab →</b></summary>
-<br/>
-
-| Project | What it is |
-|---|---|
-| [Stashboard](https://github.com/ssfshad/Stashboard) | A personal vault for passwords, files, notes and image collections · `JavaScript` |
-| [skshihanfardin.ami.bd](https://skshihanfardin.ami.bd) | My personal site, which auto-deploys on every push |
-
-</details>
 
 <br/>
 
