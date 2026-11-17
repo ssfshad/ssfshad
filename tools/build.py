@@ -217,7 +217,7 @@ def repl():
         ("o", "", "\u00a0'AI builder — LLM apps, automations, local AI',"),
         ("o", "", "\u00a0'ICE undergrad @ Daffodil International University']"),
         ("p", ">>> ", "me.currently_learning"),
-        ("o", "", "'Deep learning & AI engineering'"),
+        ("o", "", "'AI Engineering'"),
         ("p", ">>> ", "me.mission"),
         ("o", "", "'Build AI products people actually use.'"),
         ("p", ">>> ", "me.fun_fact"),
@@ -346,6 +346,28 @@ def covers():
         "Hello World",
         "TAURI · RUST · REACT JOURNAL",
         {"art": art, "text": 'day0123print("hello")forirangedef learn():streak+1'},
+    )
+
+    # WSN fault detection — sensor mesh with one node flagged faulty
+    nodes=[(262,92),(318,70),(380,88),(436,74),(290,146),(352,136),(414,150),(456,128),(320,196),(388,192),(440,190)]
+    links=[(0,1),(1,2),(2,3),(0,4),(1,5),(2,5),(2,6),(3,7),(4,5),(5,6),(6,7),(4,8),(5,8),(5,9),(6,9),(6,10),(7,10),(8,9),(9,10)]
+    art=[]
+    for i,j in links:
+        (x1,y1),(x2,y2)=nodes[i],nodes[j]
+        bad = 6 in (i,j)
+        art.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{"#E8A0A8" if bad else POWDER}" stroke-opacity="{.5 if bad else .35}" stroke-width="1.2"' + (' stroke-dasharray="4 4"' if bad else '') + '/>')
+    for k,(x,y) in enumerate(nodes):
+        if k==6:
+            art.append(f'<circle cx="{x}" cy="{y}" r="14" fill="none" stroke="#E8A0A8"><animate attributeName="r" values="7;20" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>')
+            art.append(f'<circle cx="{x}" cy="{y}" r="6" fill="#E8A0A8"/>')
+            art.append(f'<text x="{x}" y="{y-14}" text-anchor="middle" font-family="MO" font-size="10" fill="#E8A0A8">fault</text>')
+        else:
+            art.append(f'<circle cx="{x}" cy="{y}" r="4.5" fill="{POWDER2}"><animate attributeName="opacity" values="1;.4;1" dur="{2+k%3*.7:.1f}s" repeatCount="indefinite"/></circle>')
+    cover(
+        "wsn",
+        "WSN Fault Detection",
+        "WIRELESS SENSOR NETWORKS · ML",
+        {"art": "".join(art), "text": "fault", "glow": "#E8A0A8"},
     )
 
     # Plant recognition — leaf with scanning line

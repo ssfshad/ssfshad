@@ -75,6 +75,13 @@ I'm **Shad**, an ICE undergrad at Daffodil International University and the foun
 <br/><sub><code>Python</code> <code>Computer vision</code> <code>Deep learning</code></sub>
 </td>
 </tr>
+<tr>
+<td colspan="2" align="center" valign="top">
+<a href="https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s"><img src="assets/p-wsn.svg" width="50%"/></a>
+<br/><b><a href="https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s">AI-Powered Fault Detection in WSNs</a></b>: machine learning that spots faulty nodes in wireless sensor networks before they corrupt the data.
+<br/><sub><code>Python</code> <code>Machine learning</code> <code>IoT</code></sub>
+</td>
+</tr>
 </table>
 
 <details>
@@ -84,7 +91,6 @@ I'm **Shad**, an ICE undergrad at Daffodil International University and the foun
 | Project | What it is |
 |---|---|
 | [Stashboard](https://github.com/ssfshad/Stashboard) | A personal vault for passwords, files, notes and image collections · `JavaScript` |
-| [AI-Powered Fault Detection in WSNs](https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s) | Machine learning that spots faulty nodes in wireless sensor networks · `Python` |
 | [skshihanfardin.ami.bd](https://skshihanfardin.ami.bd) | My personal site, which auto-deploys on every push |
 
 </details>
@@ -116,7 +122,6 @@ I'm **Shad**, an ICE undergrad at Daffodil International University and the foun
 | | What | Status |
 |:-:|---|---|
 | 🏅 | **Classifying Cerebral Palsy using Gait Recognition**: explainable AI (SHAP / LIME) on gait features for GMFCS levels · with Saheeba Anjum, supervised by Dipto Biswas, Dept. of ICE, DIU | **5th of 85 teams**, DIU Research Poster Competition 2026 · paper in progress |
-| 📡 | **AI-powered fault detection in wireless sensor networks** | [Code on GitHub](https://github.com/ssfshad/AI-Powered-Fault-Detection-in-WSN-s) |
 | 📜 | Apna College **AI/ML** batch | Certified |
 | 📜 | DataCamp **AI Analyst** | Certified |
 | 📜 | **Prompt engineering**, several courses | Certified |
